@@ -1,0 +1,27 @@
+import pandas as pd
+file = open(r"C:\Users\HP\Downloads\Dataset_digital_life_impact_on_habits\social_media_sleep_stress_productivity_11000.csv","r")
+df=pd.read_csv(file) #pd.read_csv(file) no need to mention DataFrame 
+print(df)
+print(type(df))
+#datatype-->what kind of value a variable contains
+
+
+print(type(df['age']))
+print(df['age'].dtype)
+print(type(df['platform']))
+print(df['platform'].dtype)
+print(df['productivity_score'].dtype)
+
+print(df.head())
+print(df.columns)
+print(df.iloc[0:len(df)])
+
+df.info()
+print(df.describe())
+
+
+
+
+
+
+
